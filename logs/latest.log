@@ -1,0 +1,91 @@
+[13:26:53] [ServerMain/INFO]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[13:26:54] [ServerMain/WARN]: Ambiguity between arguments [teleport, location] and [teleport, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[13:26:54] [ServerMain/WARN]: Ambiguity between arguments [teleport, location] and [teleport, targets] with inputs: [0.1 -0.5 .9, 0 0 0]
+[13:26:54] [ServerMain/WARN]: Ambiguity between arguments [teleport, destination] and [teleport, targets] with inputs: [Player, 0123, @e, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[13:26:54] [ServerMain/WARN]: Ambiguity between arguments [teleport, targets] and [teleport, destination] with inputs: [Player, 0123, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[13:26:54] [ServerMain/WARN]: Ambiguity between arguments [teleport, targets, location] and [teleport, targets, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[13:26:54] [ServerMain/INFO]: Reloading ResourceManager: Default
+[13:26:54] [Worker-Main-14/INFO]: Loaded 7 recipes
+[13:26:55] [Worker-Main-14/INFO]: Loaded 1141 advancements
+[13:26:57] [Server thread/INFO]: Starting minecraft server version 1.18.1
+[13:26:57] [Server thread/INFO]: Loading properties
+[13:26:57] [Server thread/INFO]: Default game type: SURVIVAL
+[13:26:57] [Server thread/INFO]: Generating keypair
+[13:26:58] [Server thread/INFO]: Starting Minecraft server on *:25565
+[13:26:58] [Server thread/INFO]: Using epoll channel type
+[13:26:58] [Server thread/INFO]: Preparing level "world"
+[13:26:58] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[13:27:00] [Worker-Main-13/INFO]: Preparing spawn area: 0%
+[13:27:00] [Worker-Main-9/INFO]: Preparing spawn area: 0%
+[13:27:00] [Worker-Main-11/INFO]: Preparing spawn area: 0%
+[13:27:00] [Worker-Main-14/INFO]: Preparing spawn area: 0%
+[13:27:00] [Worker-Main-14/INFO]: Preparing spawn area: 0%
+[13:27:01] [Worker-Main-14/INFO]: Preparing spawn area: 0%
+[13:27:01] [Worker-Main-12/INFO]: Preparing spawn area: 0%
+[13:27:02] [Worker-Main-12/INFO]: Preparing spawn area: 0%
+[13:27:02] [Worker-Main-8/INFO]: Preparing spawn area: 0%
+[13:27:03] [Worker-Main-11/INFO]: Preparing spawn area: 3%
+[13:27:07] [Worker-Main-10/INFO]: Preparing spawn area: 4%
+[13:27:07] [Worker-Main-14/INFO]: Preparing spawn area: 4%
+[13:27:07] [Worker-Main-10/INFO]: Preparing spawn area: 4%
+[13:27:07] [Worker-Main-14/INFO]: Preparing spawn area: 4%
+[13:27:07] [Worker-Main-14/INFO]: Preparing spawn area: 4%
+[13:27:07] [Worker-Main-13/INFO]: Preparing spawn area: 4%
+[13:27:07] [Worker-Main-14/INFO]: Preparing spawn area: 4%
+[13:27:07] [Worker-Main-13/INFO]: Preparing spawn area: 4%
+[13:27:07] [Worker-Main-10/INFO]: Preparing spawn area: 12%
+[13:27:08] [Worker-Main-8/INFO]: Preparing spawn area: 41%
+[13:27:08] [Worker-Main-9/INFO]: Preparing spawn area: 54%
+[13:27:09] [Worker-Main-9/INFO]: Preparing spawn area: 70%
+[13:27:09] [Worker-Main-8/INFO]: Preparing spawn area: 92%
+[13:27:10] [Worker-Main-10/INFO]: Preparing spawn area: 99%
+[13:27:10] [Server thread/INFO]: Time elapsed: 11567 ms
+[13:27:10] [Server thread/INFO]: Done (11.767s)! For help, type "help"
+[13:34:06] [User Authenticator #1/INFO]: UUID of player LightningCoder_1 is ac6732c7-05ee-4990-91f4-438c05e87866
+[13:34:07] [Server thread/INFO]: LightningCoder_1[/38.133.195.202:59377] logged in with entity id 232 at (46.43724383807477, 64.0, -248.22309012189694)
+[13:34:07] [Server thread/INFO]: LightningCoder_1 joined the game
+[13:34:24] [User Authenticator #2/INFO]: UUID of player Sakeizo is 63c97dd2-fa96-49d1-b7fc-751d96e3f4d5
+[13:34:25] [Server thread/INFO]: Sakeizo[/98.166.184.86:65524] logged in with entity id 430 at (59.69389149430413, 84.0, 39.18478097873768)
+[13:34:25] [Server thread/INFO]: Sakeizo joined the game
+[13:35:27] [User Authenticator #3/INFO]: UUID of player Chawskis is 53925c76-eca5-4377-9841-c18344be88d6
+[13:35:28] [Server thread/INFO]: Chawskis[/99.70.102.68:51822] logged in with entity id 863 at (53.47759504195321, 82.0, 41.19440069527739)
+[13:35:28] [Server thread/INFO]: Chawskis joined the game
+[13:43:33] [Server thread/INFO]: Chawskis has made the advancement [Sweet Dreams]
+[13:43:34] [Server thread/INFO]: Sakeizo has made the advancement [Sweet Dreams]
+[13:43:44] [Server thread/INFO]: LightningCoder_1 has made the advancement [Sweet Dreams]
+[13:59:04] [Server thread/WARN]: Mismatch in destroy block pos: gh{x=-1435, y=110, z=-527} gh{x=-1434, y=109, z=-527}
+[14:16:26] [Server thread/WARN]: Mismatch in destroy block pos: gh{x=-2401, y=152, z=-818} gh{x=-2401, y=151, z=-816}
+[14:17:11] [Server thread/INFO]: Villager bne['Villager'/37179, l='ServerLevel[world]', x=-2176.30, y=95.00, z=-833.60] died, message: 'Villager suffocated in a wall'
+[14:18:57] [Server thread/INFO]: Villager bne['Villager'/38818, l='ServerLevel[world]', x=-2364.72, y=125.00, z=-214.63] died, message: 'Villager suffocated in a wall'
+[14:37:35] [Server thread/INFO]: Chawskis burned to death
+[14:48:38] [Server thread/INFO]: Chawskis has made the advancement [Diamonds!]
+[15:03:02] [Server thread/WARN]: Sakeizo was kicked for floating too long!
+[15:03:03] [Server thread/INFO]: Sakeizo lost connection: Flying is not enabled on this server
+[15:03:03] [Server thread/INFO]: Sakeizo left the game
+[15:03:10] [User Authenticator #4/INFO]: UUID of player Sakeizo is 63c97dd2-fa96-49d1-b7fc-751d96e3f4d5
+[15:03:10] [Server thread/INFO]: Sakeizo[/98.166.184.86:49584] logged in with entity id 54125 at (-2501.562108006658, 89.00133597911214, 951.4118328581663)
+[15:03:10] [Server thread/INFO]: Sakeizo joined the game
+[15:36:17] [Server thread/INFO]: LightningCoder_1 has made the advancement [Diamonds!]
+[15:46:40] [Server thread/WARN]: Sakeizo moved too quickly! 10.17374531223686,0.2522033402537289,-0.19810136079365748
+[15:50:04] [Server thread/INFO]: Chawskis has made the advancement [Hot Stuff]
+[15:58:43] [Server thread/WARN]: Mismatch in destroy block pos: gh{x=-2431, y=71, z=881} gh{x=-2429, y=70, z=881}
+[15:58:43] [Server thread/WARN]: Mismatch in destroy block pos: gh{x=-2430, y=71, z=881} gh{x=-2429, y=70, z=881}
+[16:26:11] [Server thread/INFO]: Chawskis fell from a high place
+[16:26:12] [Server thread/INFO]: Skipping update from removed player 'adj['Chawskis'/863, l='ServerLevel[world]', x=-2470.19, y=118.00, z=975.92, removed=KILLED]'
+[16:28:04] [Server thread/INFO]: Sakeizo lost connection: Disconnected
+[16:28:04] [Server thread/INFO]: Sakeizo left the game
+[16:28:07] [Server thread/INFO]: LightningCoder_1 lost connection: Disconnected
+[16:28:07] [Server thread/INFO]: LightningCoder_1 left the game
+[16:28:18] [Server thread/INFO]: Chawskis lost connection: Disconnected
+[16:28:18] [Server thread/INFO]: Chawskis left the game
+[16:28:54] [Server thread/INFO]: Stopping the server
+[16:28:54] [Server thread/INFO]: Stopping server
+[16:28:54] [Server thread/INFO]: Saving players
+[16:28:54] [Server thread/INFO]: Saving worlds
+[16:28:54] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[16:28:54] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_nether
+[16:28:54] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_end
+[16:28:54] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[16:28:54] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[16:28:54] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[16:28:54] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
