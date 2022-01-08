@@ -245,6 +245,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/misc/firework_rocket_simple": {
+    "criteria": {
+      "has_gunpowder": "2022-01-08 12:43:02 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/food/cake": {
     "criteria": {
       "has_egg": "2022-01-04 14:55:54 +0000"
@@ -280,7 +286,9 @@
       "cooked_porkchop": "2022-01-04 16:19:42 +0000",
       "cooked_mutton": "2022-01-07 14:27:31 +0000",
       "cooked_beef": "2022-01-04 15:12:35 +0000",
-      "glow_berries": "2022-01-07 13:45:05 +0000"
+      "golden_apple": "2022-01-08 12:55:06 +0000",
+      "glow_berries": "2022-01-07 13:45:05 +0000",
+      "cooked_chicken": "2022-01-08 13:09:17 +0000"
     },
     "done": false
   },
@@ -422,6 +430,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/glass": {
+    "criteria": {
+      "has_sand": "2022-01-08 10:54:43 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/combat/iron_helmet": {
     "criteria": {
       "has_iron_ingot": "2022-01-04 15:07:38 +0000"
@@ -449,6 +463,12 @@
   "minecraft:recipes/food/cooked_chicken_from_smoking": {
     "criteria": {
       "has_chicken": "2022-01-04 14:54:20 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/tnt": {
+    "criteria": {
+      "has_gunpowder": "2022-01-08 12:43:02 +0000"
     },
     "done": true
   },
@@ -569,6 +589,12 @@
   "minecraft:adventure/sleep_in_bed": {
     "criteria": {
       "slept_in_bed": "2022-01-07 13:43:44 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/sandstone": {
+    "criteria": {
+      "has_sand": "2022-01-08 10:54:43 +0000"
     },
     "done": true
   },
@@ -772,6 +798,8 @@
   },
   "minecraft:adventure/kill_all_mobs": {
     "criteria": {
+      "minecraft:spider": "2022-01-08 12:43:37 +0000",
+      "minecraft:creeper": "2022-01-08 12:43:01 +0000",
       "minecraft:cave_spider": "2022-01-04 16:01:07 +0000",
       "minecraft:piglin": "2022-01-04 16:23:32 +0000",
       "minecraft:zombie": "2022-01-04 16:00:24 +0000",
@@ -1091,6 +1119,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/misc/red_dye_from_poppy": {
+    "criteria": {
+      "has_poppy": "2022-01-08 11:33:13 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/misc/nether_brick": {
     "criteria": {
       "has_netherrack": "2022-01-04 16:19:37 +0000"
@@ -1118,6 +1152,12 @@
   "minecraft:recipes/building_blocks/spruce_wood": {
     "criteria": {
       "has_log": "2022-01-07 14:05:09 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/yellow_dye_from_dandelion": {
+    "criteria": {
+      "has_dandelion": "2022-01-08 11:31:13 +0000"
     },
     "done": true
   },
@@ -1163,15 +1203,15 @@
     },
     "done": true
   },
-  "minecraft:recipes/building_blocks/gray_concrete_powder": {
-    "criteria": {
-      "has_gravel": "2022-01-07 15:01:46 +0000"
-    },
-    "done": true
-  },
   "minecraft:recipes/decorations/light_gray_banner": {
     "criteria": {
       "has_light_gray_wool": "2022-01-07 13:57:59 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/gray_concrete_powder": {
+    "criteria": {
+      "has_gravel": "2022-01-07 15:01:46 +0000"
     },
     "done": true
   },
@@ -1226,6 +1266,12 @@
   "minecraft:recipes/combat/iron_boots": {
     "criteria": {
       "has_iron_ingot": "2022-01-04 15:07:38 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/bone_meal": {
+    "criteria": {
+      "has_bone": "2022-01-08 12:43:30 +0000"
     },
     "done": true
   },
@@ -1331,15 +1377,15 @@
     },
     "done": true
   },
-  "minecraft:recipes/building_blocks/red_concrete_powder": {
-    "criteria": {
-      "has_gravel": "2022-01-07 15:01:46 +0000"
-    },
-    "done": true
-  },
   "minecraft:recipes/decorations/light_blue_bed_from_white_bed": {
     "criteria": {
       "has_bed": "2022-01-07 13:43:19 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/red_concrete_powder": {
+    "criteria": {
+      "has_gravel": "2022-01-07 15:01:46 +0000"
     },
     "done": true
   },
