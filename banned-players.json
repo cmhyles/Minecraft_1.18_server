@@ -1,1 +1,10 @@
-[]
+[
+  {
+    "uuid": "3c5f5fd2-fb86-4d51-98fa-e737d98321f1",
+    "name": "n2m",
+    "created": "2022-01-10 11:03:28 -0600",
+    "source": "Server",
+    "expires": "forever",
+    "reason": "Banned by an operator."
+  }
+]
