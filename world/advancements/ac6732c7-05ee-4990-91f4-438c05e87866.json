@@ -89,6 +89,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/transportation/furnace_minecart": {
+    "criteria": {
+      "has_minecart": "2022-01-11 14:25:58 -0600"
+    },
+    "done": true
+  },
   "minecraft:recipes/tools/iron_pickaxe": {
     "criteria": {
       "has_iron_ingot": "2022-01-04 09:07:38 -0600"
@@ -212,6 +218,12 @@
   "minecraft:recipes/combat/golden_sword": {
     "criteria": {
       "has_gold_ingot": "2022-01-09 06:17:16 -0600"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/hopper_minecart": {
+    "criteria": {
+      "has_minecart": "2022-01-11 14:25:58 -0600"
     },
     "done": true
   },
@@ -350,6 +362,12 @@
   "minecraft:recipes/building_blocks/gray_wool": {
     "criteria": {
       "has_white_wool": "2022-01-07 07:48:51 -0600"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/detector_rail": {
+    "criteria": {
+      "has_rail": "2022-01-12 08:26:44 -0600"
     },
     "done": true
   },
@@ -720,6 +738,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/transportation/chest_minecart": {
+    "criteria": {
+      "has_minecart": "2022-01-11 14:25:58 -0600"
+    },
+    "done": true
+  },
   "minecraft:recipes/combat/diamond_leggings": {
     "criteria": {
       "has_diamond": "2022-01-07 09:36:17 -0600"
@@ -981,6 +1005,12 @@
   "minecraft:recipes/redstone/lightning_rod": {
     "criteria": {
       "has_copper_ingot": "2022-01-09 05:00:12 -0600"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/activator_rail": {
+    "criteria": {
+      "has_rail": "2022-01-12 08:26:44 -0600"
     },
     "done": true
   },
@@ -1398,6 +1428,12 @@
   "minecraft:recipes/misc/blue_dye_from_cornflower": {
     "criteria": {
       "has_cornflower": "2022-01-08 07:49:48 -0600"
+    },
+    "done": true
+  },
+  "minecraft:nether/find_fortress": {
+    "criteria": {
+      "fortress": "2022-01-11 15:12:25 -0600"
     },
     "done": true
   },
@@ -1843,13 +1879,18 @@
     "criteria": {
       "minecraft:old_growth_pine_taiga": "2022-01-07 08:12:38 -0600",
       "minecraft:taiga": "2022-01-07 08:00:40 -0600",
+      "minecraft:frozen_river": "2022-01-11 14:55:49 -0600",
       "minecraft:sunflower_plains": "2022-01-04 09:08:35 -0600",
       "minecraft:beach": "2022-01-07 08:02:41 -0600",
       "minecraft:river": "2022-01-04 10:30:34 -0600",
+      "minecraft:stony_shore": "2022-01-11 14:52:32 -0600",
       "minecraft:dripstone_caves": "2022-01-04 08:58:36 -0600",
+      "minecraft:snowy_taiga": "2022-01-11 14:56:01 -0600",
       "minecraft:cold_ocean": "2022-01-07 08:19:53 -0600",
       "minecraft:forest": "2022-01-07 07:59:47 -0600",
+      "minecraft:frozen_ocean": "2022-01-11 14:58:10 -0600",
       "minecraft:old_growth_spruce_taiga": "2022-01-07 08:11:31 -0600",
+      "minecraft:snowy_beach": "2022-01-11 14:58:01 -0600",
       "minecraft:flower_forest": "2022-01-04 10:30:52 -0600",
       "minecraft:meadow": "2022-01-04 09:08:45 -0600",
       "minecraft:plains": "2022-01-04 08:49:47 -0600"
@@ -1913,6 +1954,12 @@
   "minecraft:recipes/building_blocks/snow_block": {
     "criteria": {
       "has_snowball": "2022-01-07 08:23:25 -0600"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/powered_rail": {
+    "criteria": {
+      "has_rail": "2022-01-12 08:26:44 -0600"
     },
     "done": true
   },
@@ -2090,6 +2137,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/transportation/tnt_minecart": {
+    "criteria": {
+      "has_minecart": "2022-01-11 14:25:58 -0600"
+    },
+    "done": true
+  },
   "minecraft:recipes/redstone/piston": {
     "criteria": {
       "has_redstone": "2022-01-04 09:22:20 -0600"
@@ -2119,6 +2172,12 @@
   "minecraft:recipes/building_blocks/purpur_slab_from_purpur_block_stonecutting": {
     "criteria": {
       "has_purpur_block": "2022-01-09 07:53:39 -0600"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/rail": {
+    "criteria": {
+      "has_minecart": "2022-01-11 14:25:58 -0600"
     },
     "done": true
   },

@@ -4,5 +4,23 @@
     "name": "LightningCoder_1",
     "level": 4,
     "bypassesPlayerLimit": false
+  },
+  {
+    "uuid": "63c97dd2-fa96-49d1-b7fc-751d96e3f4d5",
+    "name": "Sakeizo",
+    "level": 4,
+    "bypassesPlayerLimit": false
+  },
+  {
+    "uuid": "2f7cdef9-5645-42fa-81f5-5fef94c52923",
+    "name": "LintyAnt",
+    "level": 4,
+    "bypassesPlayerLimit": false
+  },
+  {
+    "uuid": "53925c76-eca5-4377-9841-c18344be88d6",
+    "name": "Chawskis",
+    "level": 4,
+    "bypassesPlayerLimit": false
   }
 ]
