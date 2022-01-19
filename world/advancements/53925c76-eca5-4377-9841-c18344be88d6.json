@@ -656,6 +656,7 @@
       "minecraft:magma_cube": "2022-01-08 05:53:15 -0600",
       "minecraft:spider": "2022-01-04 09:42:03 -0600",
       "minecraft:creeper": "2022-01-10 10:15:17 -0600",
+      "minecraft:witch": "2022-01-19 09:03:13 -0600",
       "minecraft:wither_skeleton": "2022-01-08 05:36:29 -0600",
       "minecraft:ender_dragon": "2022-01-09 07:25:20 -0600",
       "minecraft:shulker": "2022-01-09 07:53:08 -0600",
@@ -951,6 +952,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/misc/red_dye_from_poppy": {
+    "criteria": {
+      "has_poppy": "2022-01-16 09:38:08 -0600"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/blackstone_stairs": {
     "criteria": {
       "has_blackstone": "2022-01-09 06:15:41 -0600"
@@ -960,6 +967,12 @@
   "minecraft:recipes/building_blocks/spruce_wood": {
     "criteria": {
       "has_log": "2022-01-09 05:49:16 -0600"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/yellow_dye_from_dandelion": {
+    "criteria": {
+      "has_dandelion": "2022-01-16 09:43:39 -0600"
     },
     "done": true
   },
@@ -2267,6 +2280,12 @@
   "minecraft:recipes/building_blocks/deepslate": {
     "criteria": {
       "has_cobbled_deepslate": "2022-01-04 09:46:11 -0600"
+    },
+    "done": true
+  },
+  "minecraft:adventure/trade": {
+    "criteria": {
+      "traded": "2022-01-19 07:42:00 -0600"
     },
     "done": true
   },
