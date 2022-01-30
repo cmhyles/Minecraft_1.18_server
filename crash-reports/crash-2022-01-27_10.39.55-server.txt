@@ -1,0 +1,307 @@
+---- Minecraft Crash Report ----
+// Uh... Did I do that?
+
+Time: 1/27/22, 10:39 AM
+Description: Watching Server
+
+java.lang.Error: Watchdog
+	at com.google.common.collect.Iterators$1.hasNext(Iterators.java:140)
+	at adg.q(SourceFile:357)
+	at adg.a(SourceFile:325)
+	at adi.a(SourceFile:308)
+	at net.minecraft.server.MinecraftServer.b(SourceFile:879)
+	at acj.b(SourceFile:324)
+	at net.minecraft.server.MinecraftServer.a(SourceFile:823)
+	at net.minecraft.server.MinecraftServer.w(SourceFile:684)
+	at net.minecraft.server.MinecraftServer.a(SourceFile:270)
+	at net.minecraft.server.MinecraftServer$$Lambda$4223/0x000000080140fdd0.run(Unknown Source)
+	at java.base@17.0.1/java.lang.Thread.run(Thread.java:833)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Server Watchdog
+Stacktrace:
+	at com.google.common.collect.Iterators$1.hasNext(Iterators.java:140)
+	at adg.q(SourceFile:357)
+	at adg.a(SourceFile:325)
+	at adi.a(SourceFile:308)
+	at net.minecraft.server.MinecraftServer.b(SourceFile:879)
+	at acj.b(SourceFile:324)
+	at net.minecraft.server.MinecraftServer.a(SourceFile:823)
+	at net.minecraft.server.MinecraftServer.w(SourceFile:684)
+	at net.minecraft.server.MinecraftServer.a(SourceFile:270)
+
+-- Thread Dump --
+Details:
+	Threads: "Reference Handler" daemon prio=10 Id=2 RUNNABLE
+	at java.base@17.0.1/java.lang.ref.Reference.waitForReferencePendingList(Native Method)
+	at java.base@17.0.1/java.lang.ref.Reference.processPendingReferences(Reference.java:253)
+	at java.base@17.0.1/java.lang.ref.Reference$ReferenceHandler.run(Reference.java:215)
+
+
+"Finalizer" daemon prio=8 Id=3 WAITING on java.lang.ref.ReferenceQueue$Lock@759974cf
+	at java.base@17.0.1/java.lang.Object.wait(Native Method)
+	-  waiting on java.lang.ref.ReferenceQueue$Lock@759974cf
+	at java.base@17.0.1/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:155)
+	at java.base@17.0.1/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:176)
+	at java.base@17.0.1/java.lang.ref.Finalizer$FinalizerThread.run(Finalizer.java:172)
+
+
+"Signal Dispatcher" daemon prio=9 Id=4 RUNNABLE
+
+
+"Attach Listener" daemon prio=5 Id=5 RUNNABLE
+
+
+"Notification Thread" daemon prio=9 Id=12 RUNNABLE
+
+
+"Common-Cleaner" daemon prio=8 Id=13 TIMED_WAITING on java.lang.ref.ReferenceQueue$Lock@7b5e940c
+	at java.base@17.0.1/java.lang.Object.wait(Native Method)
+	-  waiting on java.lang.ref.ReferenceQueue$Lock@7b5e940c
+	at java.base@17.0.1/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:155)
+	at java.base@17.0.1/jdk.internal.ref.CleanerImpl.run(CleanerImpl.java:140)
+	at java.base@17.0.1/java.lang.Thread.run(Thread.java:833)
+	at java.base@17.0.1/jdk.internal.misc.InnocuousThread.run(InnocuousThread.java:162)
+
+
+"DestroyJavaVM" prio=5 Id=15 RUNNABLE
+
+
+"Timer hack thread" daemon prio=5 Id=25 TIMED_WAITING
+	at java.base@17.0.1/java.lang.Thread.sleep(Native Method)
+	at ad$6.run(SourceFile:803)
+
+
+"Server thread" prio=8 Id=29 RUNNABLE
+	at com.google.common.collect.Iterators$1.hasNext(Iterators.java:140)
+	at adg.q(SourceFile:357)
+	at adg.a(SourceFile:325)
+	at adi.a(SourceFile:308)
+	at net.minecraft.server.MinecraftServer.b(SourceFile:879)
+	at acj.b(SourceFile:324)
+	at net.minecraft.server.MinecraftServer.a(SourceFile:823)
+	at net.minecraft.server.MinecraftServer.w(SourceFile:684)
+	...
+
+
+"Server console handler" daemon prio=8 Id=31 RUNNABLE (in native)
+	at java.base@17.0.1/java.io.FileInputStream.readBytes(Native Method)
+	at java.base@17.0.1/java.io.FileInputStream.read(FileInputStream.java:276)
+	at java.base@17.0.1/java.io.BufferedInputStream.read1(BufferedInputStream.java:282)
+	at java.base@17.0.1/java.io.BufferedInputStream.read(BufferedInputStream.java:343)
+	-  locked java.io.BufferedInputStream@7f611fbf
+	at java.base@17.0.1/sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:270)
+	at java.base@17.0.1/sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:313)
+	at java.base@17.0.1/sun.nio.cs.StreamDecoder.read(StreamDecoder.java:188)
+	-  locked java.io.InputStreamReader@3a639e37
+	at java.base@17.0.1/java.io.InputStreamReader.read(InputStreamReader.java:177)
+	...
+
+
+"Netty Server IO #0" daemon prio=5 Id=32 RUNNABLE
+	at io.netty.util.concurrent.PromiseTask.runTask(PromiseTask.java:95)
+	at io.netty.util.concurrent.ScheduledFutureTask.run(ScheduledFutureTask.java:170)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:164)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:469)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:497)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:986)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at java.base@17.0.1/java.lang.Thread.run(Thread.java:833)
+
+
+"Server Watchdog" daemon prio=8 Id=39 RUNNABLE
+	at java.management@17.0.1/sun.management.ThreadImpl.dumpThreads0(Native Method)
+	at java.management@17.0.1/sun.management.ThreadImpl.dumpAllThreads(ThreadImpl.java:521)
+	at java.management@17.0.1/sun.management.ThreadImpl.dumpAllThreads(ThreadImpl.java:509)
+	at acm.run(SourceFile:49)
+	at java.base@17.0.1/java.lang.Thread.run(Thread.java:833)
+
+
+"Netty Server IO #1" daemon prio=5 Id=43 RUNNABLE (in native)
+	at java.base@17.0.1/sun.nio.ch.WEPoll.wait(Native Method)
+	at java.base@17.0.1/sun.nio.ch.WEPollSelectorImpl.doSelect(WEPollSelectorImpl.java:111)
+	at java.base@17.0.1/sun.nio.ch.SelectorImpl.lockAndDoSelect(SelectorImpl.java:129)
+	-  locked io.netty.channel.nio.SelectedSelectionKeySet@462aab8
+	-  locked sun.nio.ch.WEPollSelectorImpl@b13a0cc
+	at java.base@17.0.1/sun.nio.ch.SelectorImpl.select(SelectorImpl.java:146)
+	at io.netty.channel.nio.SelectedSelectionKeySetSelector.select(SelectedSelectionKeySetSelector.java:68)
+	at io.netty.channel.nio.NioEventLoop.select(NioEventLoop.java:810)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:457)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:986)
+	...
+
+
+"Netty Server IO #2" daemon prio=5 Id=44 RUNNABLE
+	at java.base@17.0.1/java.lang.Class.isInstance(Native Method)
+	at java.base@17.0.1/java.util.concurrent.atomic.AtomicReferenceFieldUpdater$AtomicReferenceFieldUpdaterImpl.accessCheck(AtomicReferenceFieldUpdater.java:408)
+	at java.base@17.0.1/java.util.concurrent.atomic.AtomicReferenceFieldUpdater$AtomicReferenceFieldUpdaterImpl.compareAndSet(AtomicReferenceFieldUpdater.java:440)
+	at io.netty.util.concurrent.DefaultPromise.setUncancellable(DefaultPromise.java:122)
+	at io.netty.channel.ChannelOutboundBuffer.addFlush(ChannelOutboundBuffer.java:149)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.flush(AbstractChannel.java:912)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.flush(DefaultChannelPipeline.java:1372)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeFlush0(AbstractChannelHandlerContext.java:750)
+	...
+
+
+"Netty Server IO #3" daemon prio=5 Id=48 RUNNABLE
+	at com.google.gson.internal.bind.TypeAdapters$29.write(TypeAdapters.java:761)
+	at com.google.gson.internal.bind.TypeAdapters$29.write(TypeAdapters.java:701)
+	at com.google.gson.internal.Streams.write(Streams.java:72)
+	at com.google.gson.internal.bind.TreeTypeAdapter.write(TreeTypeAdapter.java:82)
+	at com.google.gson.Gson.toJson(Gson.java:704)
+	at com.google.gson.Gson.toJsonTree(Gson.java:597)
+	at com.google.gson.Gson.toJsonTree(Gson.java:576)
+	at com.google.gson.internal.bind.TreeTypeAdapter$GsonContextImpl.serialize(TreeTypeAdapter.java:155)
+	...
+
+
+"Netty Server IO #4" daemon prio=5 Id=49 RUNNABLE
+	at java.base@17.0.1/java.lang.String.encodeUTF8(String.java:1264)
+	at java.base@17.0.1/java.lang.String.encode(String.java:825)
+	at java.base@17.0.1/java.lang.String.getBytes(String.java:1783)
+	at pn.a(SourceFile:517)
+	at pn.a(SourceFile:513)
+	at wy.a(SourceFile:29)
+	at pp.a(SourceFile:48)
+	at pp.encode(SourceFile:16)
+	...
+
+
+"Netty Server IO #5" daemon prio=5 Id=55 RUNNABLE
+	at com.google.gson.stream.JsonWriter.string(JsonWriter.java:568)
+	at com.google.gson.stream.JsonWriter.writeDeferredName(JsonWriter.java:401)
+	at com.google.gson.stream.JsonWriter.beginObject(JsonWriter.java:308)
+	at com.google.gson.internal.bind.TypeAdapters$29.write(TypeAdapters.java:760)
+	at com.google.gson.internal.bind.TypeAdapters$29.write(TypeAdapters.java:763)
+	at com.google.gson.internal.bind.TypeAdapters$29.write(TypeAdapters.java:701)
+	at com.google.gson.internal.Streams.write(Streams.java:72)
+	at com.google.gson.internal.bind.TreeTypeAdapter.write(TreeTypeAdapter.java:82)
+	...
+
+
+"Netty Server IO #6" daemon prio=5 Id=56 RUNNABLE
+	at pz$a.a(SourceFile:279)
+	at pz$a.serialize(SourceFile:130)
+	at com.google.gson.internal.bind.TreeTypeAdapter.write(TreeTypeAdapter.java:81)
+	at com.google.gson.Gson.toJson(Gson.java:704)
+	at com.google.gson.Gson.toJsonTree(Gson.java:597)
+	at com.google.gson.Gson.toJsonTree(Gson.java:576)
+	at com.google.gson.internal.bind.TreeTypeAdapter$GsonContextImpl.serialize(TreeTypeAdapter.java:155)
+	at xk$b.a(SourceFile:209)
+	...
+
+
+"Netty Server IO #7" daemon prio=5 Id=57 RUNNABLE
+	at com.google.gson.stream.JsonWriter.string(JsonWriter.java:568)
+	at com.google.gson.stream.JsonWriter.writeDeferredName(JsonWriter.java:401)
+	at com.google.gson.stream.JsonWriter.beginObject(JsonWriter.java:308)
+	at com.google.gson.internal.bind.TypeAdapters$29.write(TypeAdapters.java:760)
+	at com.google.gson.internal.bind.TypeAdapters$29.write(TypeAdapters.java:763)
+	at com.google.gson.internal.bind.TypeAdapters$29.write(TypeAdapters.java:701)
+	at com.google.gson.internal.Streams.write(Streams.java:72)
+	at com.google.gson.internal.bind.TreeTypeAdapter.write(TreeTypeAdapter.java:82)
+	...
+
+
+"Netty Server IO #8" daemon prio=5 Id=66 RUNNABLE
+	at io.netty.util.internal.shaded.org.jctools.queues.MpscArrayQueueProducerIndexField.casProducerIndex(MpscArrayQueue.java:65)
+	at io.netty.util.internal.shaded.org.jctools.queues.MpscArrayQueue.offer(MpscArrayQueue.java:312)
+	at io.netty.buffer.PoolThreadCache$MemoryRegionCache.add(PoolThreadCache.java:359)
+	at io.netty.buffer.PoolThreadCache.add(PoolThreadCache.java:187)
+	at io.netty.buffer.PoolArena.free(PoolArena.java:227)
+	at io.netty.buffer.PooledByteBuf.deallocate(PooledByteBuf.java:171)
+	at io.netty.buffer.AbstractReferenceCountedByteBuf.handleRelease(AbstractReferenceCountedByteBuf.java:110)
+	at io.netty.buffer.AbstractReferenceCountedByteBuf.release(AbstractReferenceCountedByteBuf.java:100)
+	...
+
+
+"Netty Server IO #9" daemon prio=5 Id=82 RUNNABLE
+	at io.netty.buffer.AbstractByteBuf.maxCapacity(AbstractByteBuf.java:102)
+	at io.netty.buffer.PooledByteBuf.reuse(PooledByteBuf.java:78)
+	at io.netty.buffer.PooledUnsafeDirectByteBuf.newInstance(PooledUnsafeDirectByteBuf.java:40)
+	at io.netty.buffer.PoolArena$DirectArena.newByteBuf(PoolArena.java:647)
+	at io.netty.buffer.PoolArena.allocate(PoolArena.java:125)
+	at io.netty.buffer.PooledByteBufAllocator.newDirectBuffer(PooledByteBufAllocator.java:395)
+	at io.netty.buffer.AbstractByteBufAllocator.directBuffer(AbstractByteBufAllocator.java:188)
+	at io.netty.buffer.AbstractByteBufAllocator.directBuffer(AbstractByteBufAllocator.java:179)
+	...
+
+
+"Netty Server IO #10" daemon prio=5 Id=83 RUNNABLE
+	at com.google.gson.stream.JsonWriter.setSerializeNulls(JsonWriter.java:270)
+	at com.google.gson.Gson.toJson(Gson.java:714)
+	at com.google.gson.Gson.toJsonTree(Gson.java:597)
+	at com.google.gson.Gson.toJsonTree(Gson.java:576)
+	at com.google.gson.internal.bind.TreeTypeAdapter$GsonContextImpl.serialize(TreeTypeAdapter.java:155)
+	at xk$b.a(SourceFile:209)
+	at xk$b.serialize(SourceFile:179)
+	at com.google.gson.internal.bind.TreeTypeAdapter.write(TreeTypeAdapter.java:81)
+	...
+
+
+"Netty Server IO #11" daemon prio=5 Id=84 RUNNABLE
+	at com.google.gson.stream.JsonWriter.value(JsonWriter.java:413)
+	at com.google.gson.internal.bind.TypeAdapters$29.write(TypeAdapters.java:749)
+	at com.google.gson.internal.bind.TypeAdapters$29.write(TypeAdapters.java:763)
+	at com.google.gson.internal.bind.TypeAdapters$29.write(TypeAdapters.java:763)
+	at com.google.gson.internal.bind.TypeAdapters$29.write(TypeAdapters.java:701)
+	at com.google.gson.internal.Streams.write(Streams.java:72)
+	at com.google.gson.internal.bind.TreeTypeAdapter.write(TreeTypeAdapter.java:82)
+	at com.google.gson.Gson.toJson(Gson.java:704)
+	...
+
+
+
+Stacktrace:
+	at acm.run(SourceFile:65)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+-- Performance stats --
+Details:
+	Random tick rate: 3
+	Level stats: ResourceKey[minecraft:dimension / minecraft:overworld]: players: 0, entities: 86,86,66,529,529,0,0 [minecraft:chicken:27,minecraft:item:17,minecraft:chest_minecart:9,minecraft:pig:9,minecraft:sheep:9], block_entities: 26 [minecraft:mob_spawner:16,minecraft:beehive:5,minecraft:furnace:5], block_ticks: 128, fluid_ticks: 288, chunk_source: Chunks[S] W: 2209 E: 86,86,66,529,529,0,0,
+ResourceKey[minecraft:dimension / minecraft:the_nether]: players: 0, entities: 0,0,0,0,0,0,0 [], block_entities: 0 [], block_ticks: 0, fluid_ticks: 0, chunk_source: Chunks[S] W: 0 E: 0,0,0,0,0,0,0,
+ResourceKey[minecraft:dimension / minecraft:the_end]: players: 0, entities: 0,0,0,0,0,0,0 [], block_entities: 0 [], block_ticks: 0, fluid_ticks: 0, chunk_source: Chunks[S] W: 0 E: 0,0,0,0,0,0,0
+
+-- System Details --
+Details:
+	Minecraft Version: 1.18.1
+	Minecraft Version ID: 1.18.1
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 17.0.1, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode, sharing), Oracle Corporation
+	Memory: 1654674984 bytes (1578 MiB) / 4261412864 bytes (4064 MiB) up to 5368709120 bytes (5120 MiB)
+	CPUs: 6
+	Processor Vendor: GenuineIntel
+	Processor Name: Intel(R) Core(TM) i5-8400 CPU @ 2.80GHz
+	Identifier: Intel64 Family 6 Model 158 Stepping 10
+	Microarchitecture: Coffee Lake
+	Frequency (GHz): 2.81
+	Number of physical packages: 1
+	Number of physical CPUs: 6
+	Number of logical CPUs: 6
+	Graphics card #0 name: NVIDIA GeForce GTX 1060 6GB
+	Graphics card #0 vendor: NVIDIA (0x10de)
+	Graphics card #0 VRAM (MB): 4095.00
+	Graphics card #0 deviceId: 0x1c03
+	Graphics card #0 versionInfo: DriverVersion=30.0.14.9709
+	Memory slot #0 capacity (MB): 8192.00
+	Memory slot #0 clockSpeed (GHz): 2.13
+	Memory slot #0 type: DDR4
+	Memory slot #1 capacity (MB): 8192.00
+	Memory slot #1 clockSpeed (GHz): 2.13
+	Memory slot #1 type: DDR4
+	Virtual memory max (MB): 25008.09
+	Virtual memory used (MB): 18071.07
+	Swap memory total (MB): 8704.00
+	Swap memory used (MB): 424.59
+	JVM Flags: 1 total; -Xmx5120M
+	Server Running: true
+	Player Count: 0 / 20; []
+	Data Packs: vanilla
+	Is Modded: Probably not. Server jar signature and brand is untouched
+	Type: Dedicated Server (map_server.txt)

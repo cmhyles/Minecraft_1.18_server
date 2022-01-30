@@ -1,7 +1,7 @@
 @echo OFF
 :loop
 
-java -Xmx5120M -jar server.jar nogui
+java -Xmx4096M -jar server.jar nogui
 
 echo Press control+C to exit the server!
 
